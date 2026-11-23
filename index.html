@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dinner, Together | Every dish, ready together</title>
+<meta name="description" content="Pick a dinner time. Dinner, Together plans when to start each dish so everything reaches the table together. For iPhone and iPad.">
+<meta name="theme-color" content="#faf6ed">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dinner, Together">
+<meta property="og:description" content="One plan keeps every dish on time.">
+<meta property="og:url" content="https://josephdorseyc-boop.github.io/dinner-together-site/">
+<link rel="canonical" href="https://josephdorseyc-boop.github.io/dinner-together-site/">
+<style>
+:root{color-scheme:light;--cream:#faf6ed;--paper:#fffdf8;--ink:#302b25;--muted:#655d52;--tomato:#9f3426;--olive:#465439;--line:#e6dfd2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(100% - 2rem,68rem);margin-inline:auto}
+a{color:var(--tomato)} a:focus-visible{outline:3px solid var(--olive);outline-offset:5px}
+header{padding-block:1.6rem;border-bottom:1px solid var(--line)}
+.wordmark{font:1.35rem Georgia,serif;display:flex;gap:.65rem;align-items:center}
+.wordmark svg{width:1.7rem;height:1.7rem;color:var(--olive)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:clamp(2rem,7vw,6rem);padding-block:clamp(3.2rem,8vw,7rem)}
+.eyebrow{color:var(--olive);font-size:.84rem;letter-spacing:.11em;font-weight:750;text-transform:uppercase;margin:0 0 .8rem}
+h1,h2,h3,p{margin-block-start:0}
+h1,h2{font-family:Georgia,serif;font-weight:400;letter-spacing:-.037em;line-height:1.04}
+h1{font-size:clamp(3.05rem,8vw,6.25rem);margin-bottom:1rem}
+h2{font-size:clamp(2rem,5vw,3.1rem);margin-bottom:.75rem}
+.lede{font-size:clamp(1.05rem,2vw,1.25rem);max-width:32rem;color:var(--muted)}
+.cta{display:inline-flex;align-items:center;min-height:3rem;padding:.62rem 1.2rem;border-radius:.7rem;background:var(--tomato);color:white;text-decoration:none;font-weight:720}
+.cta:hover{background:#81281e}
+.note{color:var(--muted);font-size:.9rem;margin:.8rem 0 0}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:1.4rem;padding:clamp(1.25rem,4vw,2rem);box-shadow:0 16px 40px #503f2612}
+.plan h2{font-size:2rem}
+.plan ol{list-style:none;padding:0;margin:0}
+.plan li{display:grid;grid-template-columns:5.15rem 1fr;gap:.75rem;padding:.8rem 0;border-top:1px solid var(--line)}
+.plan time{font-size:.9rem;color:var(--olive);font-weight:740;font-variant-numeric:tabular-nums}
+.plan li:last-child{font-weight:720}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;padding-bottom:3rem}
+.features article{background:var(--paper);border:1px solid var(--line);padding:1.25rem;border-radius:1rem}
+.features h3{font-size:1.02rem;margin-bottom:.35rem}
+.features p,.duo p{color:var(--muted);margin-bottom:0}
+.duo{border-top:1px solid var(--line);padding-block:2.7rem;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap}
+.duo p{max-width:35rem}
+.badge{display:inline-flex;border-radius:.5rem}
+.badge img{display:block;width:186px;height:56px;max-width:100%}
+footer{border-top:1px solid var(--line);padding-block:1.35rem 2.1rem;color:var(--muted)}
+footer nav{display:flex;flex-wrap:wrap;gap:.5rem 1.35rem}
+@media(max-width:720px){.hero,.features{grid-template-columns:1fr}.features{gap:.75rem}.hero{padding-bottom:2rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap wordmark"><svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 27V16M16 19C6 20 4 13 4 8c7 0 12 3 12 11ZM16 16c0-7 5-10 12-10 0 7-3 11-12 10Z"/></svg>Dinner, Together</div></header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="headline">
+    <div>
+      <p class="eyebrow">A dinner planner for iPhone and iPad</p>
+      <h1 id="headline">Bring dinner together.</h1>
+      <p class="lede">Pick a time to eat. Dinner, Together works backward to tell you when to start each dish, so everything is ready at the same time.</p>
+      <a class="cta" href="https://apps.apple.com/us/app/dinner-together/id6821527789">Get it on the App Store</a>
+      <p class="note">One-time purchase. No account or subscription.</p>
+    </div>
+    <div class="plan" aria-labelledby="sample">
+      <p class="eyebrow">Example dinner plan</p>
+      <h2 id="sample">Dinner at 7:00</h2>
+      <ol>
+        <li><time datetime="18:15">6:15 PM</time><span>Preheat the oven</span></li>
+        <li><time datetime="18:25">6:25 PM</time><span>Start the potatoes</span></li>
+        <li><time datetime="18:40">6:40 PM</time><span>Put the salmon in</span></li>
+        <li><time datetime="19:00">7:00 PM</time><span>Bring it all to the table</span></li>
+      </ol>
+    </div>
+  </section>
+  <section class="features" aria-label="How it works">
+    <article><h3>Bring your own recipes</h3><p>Scan a recipe card, add screenshots, or import a supported link.</p></article>
+    <article><h3>Know what to do next</h3><p>See which step needs you now, what’s on a timer, and what’s coming up.</p></article>
+    <article><h3>Adjust when plans change</h3><p>Running behind? Review a new dinner time before anything changes.</p></article>
+  </section>
+  <section class="duo" aria-labelledby="duo">
+    <div>
+      <p class="eyebrow">iPhone Duo</p>
+      <h2 id="duo">Open it like a cookbook.</h2>
+      <p>See the recipe photo and steps side by side, or glance at what’s next on the cover screen.</p>
+    </div>
+    <a class="badge" href="https://builtforduo.app/apps/dinner-together"><img src="https://builtforduo.app/badge/listed-light.svg" alt="Listed on Built for Duo" width="186" height="56"></a>
+  </section>
+</main>
+<footer><nav class="wrap" aria-label="Footer"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></footer>
+</body>
+</html>
